@@ -41,7 +41,7 @@ export const App = () => {
     if (decodedToken.exp * 1000 < Date.now()) {
       localStorage.clear();
       window.location.href = "/";
-    } else if (window.location.href !== "http://localhost:3000/agenda") {
+    } else if (window.location.href !== "https://roditor-agenda.netlify.app/agenda") {// else if (window.location.href !== "http://localhost:3000/agenda")
       //if i don't specify the condition above, continuing reloading is happening
       window.location.href = "/agenda";
     }
