@@ -4,7 +4,6 @@ import { TimeContext } from "../../context/timeContext";
 import { GeneralContext } from "../../context/generalContext";
 import axios from "axios";
 
-import { FaRegClock, FaAlignLeft, FaPenAlt, FaTimes } from "react-icons/fa";
 
 //Material-ui stuff
 import { makeStyles } from "@material-ui/core/styles";
@@ -87,7 +86,7 @@ export const EditEvent = () => {
     setTitle(itemDetails.title);
     setDescription(itemDetails.description);
     setHour(itemDetails.hour);
-  }, []);
+  }, [setTitle,setDescription,setHour,itemDetails.title, itemDetails.description, itemDetails.hour]);
 
   //opens the Modal
   const handleOpen = () => {

@@ -36,8 +36,8 @@ export const YearSummary = () => {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [currentMoment, setCurrentMoment] = useState(moment());
-  const [startMoment, setStartMoment] = useState(moment().startOf("year"));
-  const [endMoment, setEndMoment] = useState(moment().endOf("year"));
+  const [startMoment] = useState(moment().startOf("year"));
+  const [endMoment] = useState(moment().endOf("year"));
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
