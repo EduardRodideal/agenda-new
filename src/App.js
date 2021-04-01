@@ -54,7 +54,7 @@ export const App = () => {
           <TopNavbar />
           <div className="container1">
             <Switch>
-              <Route path="/" exact component={HomePage} />
+              <Route path="/" exact component={Login} />
               <Route path="/agenda" component={HomePage} />
               <Route path="/signup" component={Signup} />
             </Switch>
