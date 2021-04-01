@@ -18,13 +18,14 @@ export const HomeBtn = () => {
 
   //handels click on Home button
   const handleClick = () => {
-    const token = localStorage.FBIdToken;
-    if (token) {
-      history.push("/agenda");
-    } else {
-      history.push("/agenda");
-      //setOpen((prev) => !prev);
-    }
+     history.push("/agenda");
+//     const token = localStorage.FBIdToken;
+//     if (token) {
+//       history.push("/agenda");
+//     } else {
+//       history.push("/agenda");
+//       //setOpen((prev) => !prev);
+//     }
   };
 
   //handels when we click outside the Home button
@@ -42,7 +43,7 @@ export const HomeBtn = () => {
       <div className="btnNav">
         {/**the Home button */}
         <Button disabled={alert} color="inherit" onClick={handleClick}>
-          Agenda
+          Agendaa
         </Button>
         {/**when open is true it shows the container below */}
         {open ? (
