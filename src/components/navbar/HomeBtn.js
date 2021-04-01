@@ -22,7 +22,8 @@ export const HomeBtn = () => {
     if (token) {
       history.push("/agenda");
     } else {
-      setOpen((prev) => !prev);
+      history.push("/agenda");
+      //setOpen((prev) => !prev);
     }
   };
 
